@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Beauty Spa</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f6f4;
+  color: #222;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+}
+
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #444;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e8a58c;
+}
+
+/* BUTTON */
+.btn {
+  background: #e8a58c;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d88f75;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 70px;
+  background: linear-gradient(to right, #d8e3dc, #f2c6b4);
+  border-radius: 0 0 60px 60px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.hero-img img {
+  width: 340px;
+  border-radius: 20px;
+}
+
+/* SERVICES */
+.services {
+  padding: 80px 70px;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(135deg, #d88f75, #f3ebe7);
+  border-radius: 40px;
+  margin: 40px 60px;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  width: 200px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #fff;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* warna lembut */
+.peach { background: #f5c6b4; }
+.pink { background: #f0b7a4; }
+.green { background: #cfe3d8; }
+
+/* PROMO */
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 70px;
+}
+
+.promo-img img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.promo-text h2 {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #1f1f1f;
+  color: #eee;
+  padding: 60px 70px 20px;
+  border-radius: 40px 40px 0 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.footer h3, .footer h4 {
+  margin-bottom: 12px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.footer-links a:hover {
+  color: #e8a58c;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #aaa;
+} 
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">Beauty Spa</div>
+  <nav>
+    <a href="#home">Home</a> 
+    <a href="#services">Services</a>
+    <a href="#featured">Featured</a>
+    <a href="#contact">Contact</a>
+  </nav>
+ 
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Rejuvenate Your Skin,<br> Glow Naturally</h1>
+    <p>Experience premium skincare treatments that bring out your natural beauty.</p>
+    <a href="booknow.html"><button class="btn">Book Now</button></a>
+  </div>
+  <div class="hero-img">
+    <img src="asset/bg2.png">
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <p class="small-title">SELF CARE</p>
+  <h2>Refresh Your Mind</h2>
+
+  <div class="card-container">
+    <div class="card peach">
+      <img src="asset/body.jpg">
+      <h3>Body Care</h3>
+    </div>
+    <div class="card pink">
+      <img src="asset/care.jpg">
+      <h3>Face Care</h3>
+    </div>
+    <div class="card green">
+      <img src="asset/aroma.jpg">
+      <h3>Aromatherapy</h3>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section id="featured" class="promo">
+  <div class="promo-img">
+    <img src="asset/handuk.jpg">
+  </div>
+  <div class="promo-text">
+    <h2>Feel Beautiful,<br> Feel Confident.</h2>
+    <p>Take time to pamper yourself with our relaxing spa treatments.</p>
+    <a href="isi.html"><button class="btn">Learn More</button></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="footer">
+  <div class="footer-container">
+
+    <div>
+      <h3>Beauty Spa</h3>
+      <p>Relax and refresh your body and mind with our spa treatment.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Services</h4>
+      <a href="#">Body Care</a>
+      <a href="#">Face Care</a>
+      <a href="#">Aromatherapy</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>beautyspa@gmail.com/p>
+      <p>+62 85800631625</p>
+      <p>Indonesia</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Beauty Spa
+  </div>
+</footer>
+
+</body>
+</html>
